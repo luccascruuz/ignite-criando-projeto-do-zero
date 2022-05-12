@@ -1,1 +1,71 @@
-// TODO
+.container {
+  display: grid;
+  justify-content: center;
+  .content {
+    margin: 2rem 0;
+    .postTitle {
+      margin-bottom: 8px;
+    }
+    .postSubtitle {
+      margin-bottom: 10px;
+    }
+    .postTitle {
+      cursor: pointer;
+      font-family: Inter;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 700;
+      color: var(--white-100);
+      transition: filter 0.2s;
+      &:hover {
+          filter: brightness(0.8);
+      }
+    }
+
+    p {
+      font-family: Inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 0em;
+      color: var(--gray-100);
+    }
+
+    time,
+    .author {
+      display: flex;
+      align-items: center;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      color: var(--gray-200);
+      .icon {
+        margin-right: 0.5rem;
+      }
+    }
+
+    .wrapperTimeAuthor {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-items: center;
+      time {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  .loader {
+    cursor: pointer;
+    color: var(--pink);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0em;
+    transition: filter 0.2s;
+    &:hover {
+        filter: brightness(0.8);
+    }
+  }
+}
